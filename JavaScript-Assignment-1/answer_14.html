@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 2;
+        var b = 1;
+
+        document.write("a is " + a);
+        document.write("<br/>b is " + b);
+        var result = --a - --b + ++b + b--;
+        document.write("<br/>result is " + result);
+    </script>
+    <!-- "at --a"-->
+    <!-- a will decrease and then initialize. So, a will be 1 -->
+    <!-- a = 1 -->
+
+    <!-- "--a - --b;" -->
+    <!-- Here a is  and b will decrease and intialize to 0. So, difference will be 1 -->
+    <!-- a = 1 -->
+    <!-- b = 0 -->
+    <!-- result = 1 -->
+
+    <!-- "--a - --b + ++b" -->
+    <!-- Here difference is 1. but b will increase and intialize to 1. So the sum will be 2 -->
+    <!-- a = 2 -->
+    <!-- b = 1 -->
+    <!-- result = 2 -->
+
+    <!-- "--a - --b + ++b + b--" -->
+    <!-- Here sum is 1 and b will decrease but will not intialize first and remains 1. So, result will be 3 -->
+    <!-- a = 2 -->
+    <!-- b = 1 -->
+    <!-- result = 3 -->
+
+</body>
+
+</html>
